@@ -3,17 +3,16 @@ from itertools import permutations
 # Encrypted message we want to crack
 ciphertext = "YXZZXZ"
 
-# Known substitutions used in encryption
 original_chars = ['A', 'B', 'D']
 encrypted_chars = ['X', 'Y', 'Z']
 
-# Try all possible mappings
+#Mapping
 for perm in permutations(encrypted_chars):
     mapping = dict(zip(perm, original_chars))
     
-    # Decrypt using this mapping
+    # Decryption
     attempt = ""
     for ch in ciphertext:
-        attempt += mapping.get(ch, ch)  # Use .get() to avoid KeyError
+        attempt += mapping.get(ch, ch)
     
     print(f"Trying mapping {mapping}: '{attempt}'")

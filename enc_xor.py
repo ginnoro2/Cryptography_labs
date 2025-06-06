@@ -1,6 +1,7 @@
 message = "BADDAD"
 cipher = ""
-KEY = 0x1F  # XOR key (can be any number between 1–255)
+# XOR key (can be any number between 1–255)
+KEY = 0x1F  
 
 for ch in message:
     encrypted_char = chr(ord(ch) ^ KEY)
