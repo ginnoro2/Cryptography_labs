@@ -5,19 +5,23 @@
 git clone https://github.com/ginnoro2/Cryptography_labs.git
 cd Cryptography_labs
 ```
-
-### 2. Set up Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-```
-
-
-### 3. Install Python3.10
+### 2. Install Python3.10
 ```bash
 apt install Python3.10
 ```
 All three Python files only use Python's standard library modules (itertools and built-in functions like chr, ord, zip, etc.).
+
+### Virtuan Environment
+```bash
+python3.10 -m pip install virtualenv
+python3.10 -m virtualenv --help
+```
+
+### 3. Set up Virtual Environment
+```bash
+python3.10 -m venv my_venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 
 ### 4. Run the Script for Simple Symmetric Substitute Cipher
 ```bash
