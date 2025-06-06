@@ -1,7 +1,5 @@
 # Cryptography_labs
-### 1. Pull the Repository
-
-Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ginnoro2/Cryptography_labs.git
